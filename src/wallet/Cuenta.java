@@ -1,13 +1,22 @@
 package wallet;
 
 public class Cuenta {
-	private int numeroDeCuenta;
-	private double saldo;
+	protected int numeroDeCuenta;
+	protected double saldo;
 	
 	
 	public Cuenta(int numeroDeCuenta,double saldo){
 		this.numeroDeCuenta=numeroDeCuenta;
 		this.saldo=saldo;
+	}
+	
+	public void depositar(double monto) {
+		this.saldo+=monto;
+	}
+	
+	public void retirar(double monto) {
+		
+		this.saldo-=monto;
 	}
 
 
@@ -30,5 +39,8 @@ public class Cuenta {
 		this.saldo = saldo;
 	}
 	
+	public String getSaldoActual() {
+		return "$  "+saldo;
+	}
 	
 }

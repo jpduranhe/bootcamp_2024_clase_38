@@ -1,0 +1,14 @@
+1- Declara los siguientes métodos en la superclase Animal: comer(), dormir() y emitirSonido().
+
+2- La subclase Perro tendrá el siguiente comportamiento: 
+comer(): llama al método comer() de la superclase Animal
+dormir(): llama al método dormir() de la superclase
+emitirSonido(): return "Guau";
+
+3- Declara otra subclase Gato que también hereda de Animal e implementa:
+comer(): llama al método comer() de la superclase Animal
+dormir(): llama al método dormir() de la superclase
+emitirSonido(): return "Miau";
+
+En el método main:
+Finalmente, crea objetos de tipo Perro y Gato y llama a sus métodos para verificar que el llamado a los métodos y su sobreescritura estén bien implementados!

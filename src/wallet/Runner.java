@@ -5,11 +5,20 @@ public class Runner {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		CuentaCorriente ctacta= new CuentaCorriente(132,500.0,"Julio");
+		/**
+		 * 
+		 * 
+		 * Probando los métodos!:
+Vamos a trabajar sobre la clase Cuenta con los métodos depositar() y retirar(). 
+Luego, crearemos las subclases CuentaPesoCL y CuentaUSD que implementarán estos métodos realizando el cambio de moneda correspondiente.
+Vamos a mostrar por pantalla los resultados para verificar.
+
+		 */
+		CuentaPesosCL cuentaPesos= new CuentaPesosCL(200,1500);
+		CuentaUSD cuentaDolares= new CuentaUSD(300,1500);
 		
-		System.out.println(ctacta.getNumeroDeCuenta());
-		System.out.println(ctacta.getSaldo());
-		System.out.println(ctacta.getTitular());
+		System.out.println(cuentaPesos.getSaldoActual());
+		System.out.println(cuentaDolares.getSaldoActual());
 	}
 
 }
